@@ -1,0 +1,234 @@
+[
+    {
+        "tmdb_id": 983577,
+        "title": "Oppenheimer",
+        "oscar_year": 2024,
+        "win_year": 2023,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 545611,
+        "title": "Tudo em Todo o Lugar ao Mesmo Tempo",
+        "oscar_year": 2023,
+        "win_year": 2022,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 776503,
+        "title": "CODA: No Ritmo do Coração",
+        "oscar_year": 2022,
+        "win_year": 2021,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 581734,
+        "title": "Nomadland",
+        "oscar_year": 2021,
+        "win_year": 2020,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 496243,
+        "title": "Parasita",
+        "oscar_year": 2020,
+        "win_year": 2019,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 490132,
+        "title": "Green Book: O Guia",
+        "oscar_year": 2019,
+        "win_year": 2018,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 399055,
+        "title": "A Forma da Água",
+        "oscar_year": 2018,
+        "win_year": 2017,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 376867,
+        "title": "Moonlight: Sob a Luz do Luar",
+        "oscar_year": 2017,
+        "win_year": 2016,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 314365,
+        "title": "Spotlight: Segredos Revelados",
+        "oscar_year": 2016,
+        "win_year": 2015,
+        "statuettes": 2,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 194662,
+        "title": "Birdman ou (A Inesperada Virtude da Ignorância)",
+        "oscar_year": 2015,
+        "win_year": 2014,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 76203,
+        "title": "12 Anos de Escravidão",
+        "oscar_year": 2014,
+        "win_year": 2013,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 68734,
+        "title": "Argo",
+        "oscar_year": 2013,
+        "win_year": 2012,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 74643,
+        "title": "O Artista",
+        "oscar_year": 2012,
+        "win_year": 2011,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 45269,
+        "title": "O Discurso do Rei",
+        "oscar_year": 2011,
+        "win_year": 2010,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 12162,
+        "title": "Guerra Ao Terror",
+        "oscar_year": 2010,
+        "win_year": 2008,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 12405,
+        "title": "Quem Quer Ser um Milionário?",
+        "oscar_year": 2009,
+        "win_year": 2008,
+        "statuettes": 8,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 6977,
+        "title": "Onde os Fracos Não Têm Vez",
+        "oscar_year": 2008,
+        "win_year": 2007,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 1422,
+        "title": "Os Infiltrados",
+        "oscar_year": 2007,
+        "win_year": 2006,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 70,
+        "title": "Million Dollar Baby - Menina de Ouro",
+        "oscar_year": 2005,
+        "win_year": 2004,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 122,
+        "title": "O Senhor dos Anéis: O Retorno do Rei",
+        "oscar_year": 2004,
+        "win_year": 2003,
+        "statuettes": 11,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 1574,
+        "title": "Chicago",
+        "oscar_year": 2003,
+        "win_year": 2002,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 453,
+        "title": "Uma Mente Brilhante",
+        "oscar_year": 2002,
+        "win_year": 2001,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 98,
+        "title": "Gladiador",
+        "oscar_year": 2001,
+        "win_year": 2000,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 14,
+        "title": "Beleza Americana",
+        "oscar_year": 2000,
+        "win_year": 1999,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 597,
+        "title": "Titanic",
+        "oscar_year": 1998,
+        "win_year": 1997,
+        "statuettes": 11,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 13,
+        "title": "Forrest Gump - O Contador de Histórias",
+        "oscar_year": 1995,
+        "win_year": 1994,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 424,
+        "title": "A Lista de Schindler",
+        "oscar_year": 1994,
+        "win_year": 1993,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 274,
+        "title": "O Silêncio dos Inocentes",
+        "oscar_year": 1992,
+        "win_year": 1991,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 238,
+        "title": "O Poderoso Chefão",
+        "oscar_year": 1973,
+        "win_year": 1972,
+        "statuettes": 3,
+        "category": "Best Picture"
+    }
+]
