@@ -1,0 +1,110 @@
+.roulette {
+  --wheel-size: min(460px, 88vw);
+  position: relative;
+  width: var(--wheel-size);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+
+.roulette__wheel {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(245, 197, 24, 0.25),
+    0 0 0 10px var(--color-night-800),
+    0 0 0 11px var(--color-gold-400),
+    0 22px 50px rgba(0, 0, 0, 0.55);
+}
+
+.roulette__segments,
+.roulette__dividers {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.roulette__labels {
+  position: absolute;
+  inset: 0;
+}
+
+.roulette__label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: calc(var(--wheel-size) * 0.17);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: calc(var(--wheel-size) * 0.021);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--color-gold-300);
+}
+
+.roulette__pointer {
+  position: absolute;
+  left: 50%;
+  top: 0.8%;
+  z-index: 30;
+  width: 34px;
+  height: 44px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, var(--color-gold-400), var(--color-gold-600));
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.6));
+}
+
+.roulette__hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: 27%;
+  aspect-ratio: 1;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 35% 30%,
+    var(--color-night-700),
+    var(--color-night-950)
+  );
+  border: 1px solid var(--color-gold-400);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.roulette__spin-button {
+  width: 78%;
+  aspect-ratio: 1;
+  border: 0;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, var(--color-gold-300), var(--color-gold-500));
+  color: var(--color-night-950);
+  font-family: var(--font-display);
+  font-size: calc(var(--wheel-size) * 0.03);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+.roulette__spin-button:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.roulette__spin-button:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.roulette__spin-button:disabled {
+  cursor: wait;
+  filter: saturate(0.4) brightness(0.8);
+}
