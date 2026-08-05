@@ -230,5 +230,525 @@
         "win_year": 1972,
         "statuettes": 3,
         "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 472,
+        "title": "Coração Valente",
+        "oscar_year": 1996,
+        "win_year": 1995,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 87258,
+        "title": "O Paciente Inglês",
+        "oscar_year": 1997,
+        "win_year": 1996,
+        "statuettes": 9,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 10527,
+        "title": "Os Imperdoáveis",
+        "oscar_year": 1993,
+        "win_year": 1992,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 10242,
+        "title": "Dança com Lobos",
+        "oscar_year": 1991,
+        "win_year": 1990,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 413,
+        "title": "Conduzindo Miss Daisy",
+        "oscar_year": 1990,
+        "win_year": 1989,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 414,
+        "title": "Rain Man",
+        "oscar_year": 1989,
+        "win_year": 1988,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 792,
+        "title": "Platoon",
+        "oscar_year": 1987,
+        "win_year": 1986,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 8743,
+        "title": "O Último Imperador",
+        "oscar_year": 1988,
+        "win_year": 1987,
+        "statuettes": 9,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 601,
+        "title": "Entre Dois Amores",
+        "oscar_year": 1986,
+        "win_year": 1985,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 793,
+        "title": "Amadeus",
+        "oscar_year": 1985,
+        "win_year": 1984,
+        "statuettes": 8,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 11362,
+        "title": "Laços de Ternura",
+        "oscar_year": 1984,
+        "win_year": 1983,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 783,
+        "title": "Gandhi",
+        "oscar_year": 1983,
+        "win_year": 1982,
+        "statuettes": 8,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 12519,
+        "title": "Carruagens de Fogo",
+        "oscar_year": 1982,
+        "win_year": 1981,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 10022,
+        "title": "Gente Como A Gente",
+        "oscar_year": 1981,
+        "win_year": 1980,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 10582,
+        "title": "Kramer vs. Kramer",
+        "oscar_year": 1980,
+        "win_year": 1979,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 11090,
+        "title": "O Sabotador de Meu Coração (The Deer Hunter)",
+        "oscar_year": 1979,
+        "win_year": 1978,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 4838,
+        "title": "Noivo Neurótico, Noiva Nervosa (Annie Hall)",
+        "oscar_year": 1978,
+        "win_year": 1977,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 1366,
+        "title": "Rocky: Um Lutador",
+        "oscar_year": 1977,
+        "win_year": 1976,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 510,
+        "title": "Um Estranho no Ninho",
+        "oscar_year": 1976,
+        "win_year": 1975,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 240,
+        "title": "O Poderoso Chefão Parte II",
+        "oscar_year": 1975,
+        "win_year": 1974,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 9277,
+        "title": "Golpe de Mestre",
+        "oscar_year": 1974,
+        "win_year": 1973,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 1051,
+        "title": "Operação França",
+        "oscar_year": 1972,
+        "win_year": 1971,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 11202,
+        "title": "Patton, Rebelde ou Herói?",
+        "oscar_year": 1971,
+        "win_year": 1970,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 16538,
+        "title": "Perdidos na Noite (Midnight Cowboy)",
+        "oscar_year": 1970,
+        "win_year": 1969,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 1827,
+        "title": "Oliver!",
+        "oscar_year": 1969,
+        "win_year": 1968,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 11210,
+        "title": "No Calor da Noite",
+        "oscar_year": 1968,
+        "win_year": 1967,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 17290,
+        "title": "O Homem Que Não Vendeu Sua Alma",
+        "oscar_year": 1967,
+        "win_year": 1966,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 15121,
+        "title": "A Noviça Rebelde",
+        "oscar_year": 1966,
+        "win_year": 1965,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 11212,
+        "title": "Minha Bela Dama (My Fair Lady)",
+        "oscar_year": 1965,
+        "win_year": 1964,
+        "statuettes": 8,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 26867,
+        "title": "As Aventuras de Tom Jones",
+        "oscar_year": 1964,
+        "win_year": 1963,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 665,
+        "title": "Lawrence da Arábia",
+        "oscar_year": 1963,
+        "win_year": 1962,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 1725,
+        "title": "Amor, Sublime Amor (West Side Story)",
+        "oscar_year": 1962,
+        "win_year": 1961,
+        "statuettes": 10,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 284,
+        "title": "Se Meu Apartamento Falasse",
+        "oscar_year": 1961,
+        "win_year": 1960,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 2738,
+        "title": "Ben-Hur",
+        "oscar_year": 1960,
+        "win_year": 1959,
+        "statuettes": 11,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 16254,
+        "title": "Gigi",
+        "oscar_year": 1959,
+        "win_year": 1958,
+        "statuettes": 9,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 826,
+        "title": "A Ponte do Rio Kwai",
+        "oscar_year": 1958,
+        "win_year": 1957,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 19611,
+        "title": "A Volta ao Mundo em 80 Dias",
+        "oscar_year": 1957,
+        "win_year": 1956,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 15895,
+        "title": "Marty",
+        "oscar_year": 1956,
+        "win_year": 1955,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 651,
+        "title": "Sindicato de Ladrões",
+        "oscar_year": 1955,
+        "win_year": 1954,
+        "statuettes": 8,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 984,
+        "title": "A um Passo da Eternidade",
+        "oscar_year": 1954,
+        "win_year": 1953,
+        "statuettes": 8,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 19536,
+        "title": "O Maior Espetáculo da Terra",
+        "oscar_year": 1953,
+        "win_year": 1952,
+        "statuettes": 2,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 18204,
+        "title": "Sinfonia de Paris (An American in Paris)",
+        "oscar_year": 1952,
+        "win_year": 1951,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 705,
+        "title": "A Malvada (All About Eve)",
+        "oscar_year": 1951,
+        "win_year": 1950,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 26868,
+        "title": "A Grande Ilusão (All the King's Men)",
+        "oscar_year": 1950,
+        "win_year": 1949,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 22312,
+        "title": "Hamlet",
+        "oscar_year": 1949,
+        "win_year": 1948,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 28628,
+        "title": "A Luz É Para Todos (Gentleman's Agreement)",
+        "oscar_year": 1948,
+        "win_year": 1947,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 22310,
+        "title": "Os Melhores Anos de Nossas Vidas",
+        "oscar_year": 1947,
+        "win_year": 1946,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 28014,
+        "title": "Farrapo Humano (The Lost Weekend)",
+        "oscar_year": 1946,
+        "win_year": 1945,
+        "statuettes": 4,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 27407,
+        "title": "O Bom Pastor (Going My Way)",
+        "oscar_year": 1945,
+        "win_year": 1944,
+        "statuettes": 7,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 289,
+        "title": "Casablanca",
+        "oscar_year": 1944,
+        "win_year": 1943,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 25884,
+        "title": "Rosa da Esperança (Mrs. Miniver)",
+        "oscar_year": 1943,
+        "win_year": 1942,
+        "statuettes": 6,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 22309,
+        "title": "Como Era Verde o Meu Vale",
+        "oscar_year": 1942,
+        "win_year": 1941,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 19257,
+        "title": "Rebecca, a Mulher Inesquecível",
+        "oscar_year": 1941,
+        "win_year": 1940,
+        "statuettes": 2,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 770,
+        "title": "E o Vento Levou",
+        "oscar_year": 1940,
+        "win_year": 1939,
+        "statuettes": 8,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 22307,
+        "title": "Do Mundo Nada Se Leva",
+        "oscar_year": 1939,
+        "win_year": 1938,
+        "statuettes": 2,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 43905,
+        "title": "A Vida de Émile Zola",
+        "oscar_year": 1938,
+        "win_year": 1937,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 31316,
+        "title": "Ziegfeld - O Criador de Estrelas",
+        "oscar_year": 1937,
+        "win_year": 1936,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 28623,
+        "title": "O Grande Motim (Mutiny on the Bounty)",
+        "oscar_year": 1936,
+        "win_year": 1935,
+        "statuettes": 1,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 3078,
+        "title": "Aconteceu Naquela Noite",
+        "oscar_year": 1935,
+        "win_year": 1934,
+        "statuettes": 5,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 43372,
+        "title": "Cavalgada (Cavalcade)",
+        "oscar_year": 1934,
+        "win_year": 1933,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 3073,
+        "title": "Grande Hotel",
+        "oscar_year": 1932,
+        "win_year": 1932,
+        "statuettes": 1,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 28614,
+        "title": "Cimarron",
+        "oscar_year": 1931,
+        "win_year": 1931,
+        "statuettes": 3,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 143,
+        "title": "Sem Novidades no Front",
+        "oscar_year": 1930,
+        "win_year": 1930,
+        "statuettes": 2,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 65203,
+        "title": "Melodia na Broadway",
+        "oscar_year": 1929,
+        "win_year": 1929,
+        "statuettes": 1,
+        "category": "Best Picture"
+    },
+    {
+        "tmdb_id": 28966,
+        "title": "Asas (Wings)",
+        "oscar_year": 1929,
+        "win_year": 1927,
+        "statuettes": 2,
+        "category": "Best Picture"
     }
 ]
