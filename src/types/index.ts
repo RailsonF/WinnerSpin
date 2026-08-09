@@ -41,3 +41,12 @@ export interface TmdbWatchResponse {
   id: number
   results: Partial<Record<string, TmdbWatchOption>>
 }
+
+export interface TmdbWatchProviderResponse {
+  results: TmdbWatchProvider[]
+}
+
+export interface RouletteFilters {
+  decade: number | null
+  providerIds: number[]
+}

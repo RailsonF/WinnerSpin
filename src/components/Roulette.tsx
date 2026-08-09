@@ -8,13 +8,21 @@ interface RouletteProps {
   movies: OscarWinner[]
   onSelect: (movie: OscarWinner) => void
   size?: number
+  disabled?: boolean
+  disabledLabel?: string
 }
 
 const SEGMENT_COLORS = ['#2a2340', '#171422']
 const DECELERATION: [number, number, number, number] = [0.12, 0.8, 0.14, 1]
 const SPIN_DURATION = 5.2
 
-export function Roulette({ movies, onSelect, size = 460 }: RouletteProps) {
+export function Roulette({
+  movies,
+  onSelect,
+  size = 460,
+  disabled = false,
+  disabledLabel = 'Aguarde…',
+}: RouletteProps) {
   const { rotation, isSpinning, winner, spin, onAnimationComplete } =
     useRoulette(movies)
 
@@ -30,7 +38,7 @@ export function Roulette({ movies, onSelect, size = 460 }: RouletteProps) {
       : 'none'
 
   const handleSpin = () => {
-    if (isSpinning) return
+    if (isSpinning || disabled) return
     spin()
   }
 
@@ -80,9 +88,9 @@ export function Roulette({ movies, onSelect, size = 460 }: RouletteProps) {
           type="button"
           className="roulette__spin-button"
           onClick={handleSpin}
-          disabled={isSpinning}
+          disabled={isSpinning || disabled}
         >
-          {isSpinning ? 'Girando…' : 'Girar'}
+          {isSpinning ? 'Girando…' : disabled ? disabledLabel : 'Girar'}
         </button>
       </div>
     </div>

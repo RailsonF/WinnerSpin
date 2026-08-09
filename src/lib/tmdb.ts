@@ -1,6 +1,7 @@
 import type {
   TmdbMovieDetails,
   TmdbWatchOption,
+  TmdbWatchProviderResponse,
   TmdbWatchResponse,
 } from '../types'
 
@@ -30,10 +31,18 @@ export function getProviderLogoUrl(
   return `${TMDB_IMAGE_URL}/${size}${logoPath}`
 }
 
-async function request<T>(path: string): Promise<T> {
+async function request<T>(
+  path: string,
+  params?: Record<string, string>,
+): Promise<T> {
   const url = new URL(`${TMDB_API_URL}${path}`)
   url.searchParams.set('api_key', TMDB_API_KEY ?? '')
   url.searchParams.set('language', 'pt-BR')
+  if (params) {
+    for (const [key, value] of Object.entries(params)) {
+      url.searchParams.set(key, value)
+    }
+  }
 
   const response = await fetch(url)
   if (!response.ok) {
@@ -53,4 +62,25 @@ export function fetchWatchProviders(
   return request<TmdbWatchResponse>(`/movie/${tmdbId}/watch/providers`).then(
     (response) => response.results[region] ?? null,
   )
+}
+
+export function fetchAvailableProviders(
+  region: string = BR_REGION,
+): Promise<TmdbWatchProviderResponse> {
+  return request<TmdbWatchProviderResponse>('/watch/providers/movie', {
+    watch_region: region,
+  })
+}
+
+export function getMovieProviderIds(
+  watchOption: TmdbWatchOption | null,
+): number[] {
+  if (!watchOption) return []
+  const ids = new Set<number>()
+  for (const group of [watchOption.flatrate, watchOption.rent, watchOption.buy]) {
+    for (const provider of group ?? []) {
+      ids.add(provider.provider_id)
+    }
+  }
+  return [...ids]
 }
