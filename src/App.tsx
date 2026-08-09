@@ -1,10 +1,15 @@
 import { useState } from 'react'
+import MovieCard from './components/MovieCard'
 import Roulette from './components/Roulette'
 import oscarWinners from './data/oscar-winners.json'
+import { useMovieDetails } from './hooks/useMovieDetails'
 import type { OscarWinner } from './types'
 
 function App() {
   const [selected, setSelected] = useState<OscarWinner | null>(null)
+  const { details, providers, isLoading, error } = useMovieDetails(
+    selected?.tmdb_id ?? null,
+  )
 
   return (
     <main className="flex min-h-svh flex-col items-center justify-center gap-10 px-4 py-10">
@@ -23,15 +28,13 @@ function App() {
       <Roulette movies={oscarWinners as OscarWinner[]} onSelect={setSelected} />
 
       {selected && (
-        <section className="text-center" aria-live="polite">
-          <h2 className="font-display text-2xl font-semibold text-zinc-100">
-            {selected.title}
-          </h2>
-          <p className="mt-1 text-sm text-zinc-400">
-            Melhor Filme ({selected.win_year}) · {selected.statuettes}{' '}
-            estatueta{selected.statuettes === 1 ? '' : 's'}
-          </p>
-        </section>
+        <MovieCard
+          movie={selected}
+          details={details}
+          providers={providers}
+          isLoading={isLoading}
+          error={error}
+        />
       )}
     </main>
   )
