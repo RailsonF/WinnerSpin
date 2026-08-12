@@ -1,6 +1,8 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import FilterBar from './components/FilterBar'
 import MovieCard from './components/MovieCard'
+import MovieModal from './components/MovieModal'
 import Roulette from './components/Roulette'
 import oscarWinners from './data/oscar-winners.json'
 import { useMovieDetails } from './hooks/useMovieDetails'
@@ -12,6 +14,7 @@ const MOVIES = oscarWinners as OscarWinner[]
 
 function App() {
   const [selected, setSelected] = useState<OscarWinner | null>(null)
+  const [modalOpen, setModalOpen] = useState(false)
   const [filter, setFilter] = useState<RouletteFilters>({
     decade: null,
     providerIds: [],
@@ -69,6 +72,15 @@ function App() {
     setFilter((prev) => ({ ...prev, providerIds: [] }))
   }
 
+  const handleSelect = useCallback((movie: OscarWinner) => {
+    setSelected(movie)
+    setModalOpen(true)
+  }, [])
+
+  const handleCloseModal = useCallback(() => {
+    setModalOpen(false)
+  }, [])
+
   const availabilityPending = providerFilterActive && !availabilityReady
   const rouletteDisabled = availabilityPending || eligible.length === 0
   const rouletteDisabledLabel = availabilityPending
@@ -104,20 +116,24 @@ function App() {
 
       <Roulette
         movies={eligible}
-        onSelect={setSelected}
+        onSelect={handleSelect}
         disabled={rouletteDisabled}
         disabledLabel={rouletteDisabledLabel}
       />
 
-      {selected && (
-        <MovieCard
-          movie={selected}
-          details={details}
-          providers={providers}
-          isLoading={isLoading}
-          error={error}
-        />
-      )}
+      <AnimatePresence>
+        {modalOpen && selected && (
+          <MovieModal onClose={handleCloseModal}>
+            <MovieCard
+              movie={selected}
+              details={details}
+              providers={providers}
+              isLoading={isLoading}
+              error={error}
+            />
+          </MovieModal>
+        )}
+      </AnimatePresence>
     </main>
   )
 }
