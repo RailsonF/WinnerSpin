@@ -1,7 +1,11 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
+import AuthModal from './components/AuthModal'
 import FilterBar from './components/FilterBar'
 import MovieCard from './components/MovieCard'
+import MovieModal from './components/MovieModal'
 import Roulette from './components/Roulette'
+import UserButton from './components/UserButton'
 import oscarWinners from './data/oscar-winners.json'
 import { useMovieDetails } from './hooks/useMovieDetails'
 import { useWatchProviders } from './hooks/useWatchProviders'
@@ -12,6 +16,8 @@ const MOVIES = oscarWinners as OscarWinner[]
 
 function App() {
   const [selected, setSelected] = useState<OscarWinner | null>(null)
+  const [modalOpen, setModalOpen] = useState(false)
+  const [authOpen, setAuthOpen] = useState(false)
   const [filter, setFilter] = useState<RouletteFilters>({
     decade: null,
     providerIds: [],
@@ -69,6 +75,23 @@ function App() {
     setFilter((prev) => ({ ...prev, providerIds: [] }))
   }
 
+  const handleSelect = useCallback((movie: OscarWinner) => {
+    setSelected(movie)
+    setModalOpen(true)
+  }, [])
+
+  const handleCloseModal = useCallback(() => {
+    setModalOpen(false)
+  }, [])
+
+  const handleOpenAuth = useCallback(() => {
+    setAuthOpen(true)
+  }, [])
+
+  const handleCloseAuth = useCallback(() => {
+    setAuthOpen(false)
+  }, [])
+
   const availabilityPending = providerFilterActive && !availabilityReady
   const rouletteDisabled = availabilityPending || eligible.length === 0
   const rouletteDisabledLabel = availabilityPending
@@ -79,6 +102,10 @@ function App() {
 
   return (
     <main className="flex min-h-svh flex-col items-center justify-center gap-10 px-4 py-10">
+      <div className="fixed right-4 top-4 z-50">
+        <UserButton onLoginClick={handleOpenAuth} />
+      </div>
+
       <header className="text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-500">
           Roleta do Oscar
@@ -104,20 +131,28 @@ function App() {
 
       <Roulette
         movies={eligible}
-        onSelect={setSelected}
+        onSelect={handleSelect}
         disabled={rouletteDisabled}
         disabledLabel={rouletteDisabledLabel}
       />
 
-      {selected && (
-        <MovieCard
-          movie={selected}
-          details={details}
-          providers={providers}
-          isLoading={isLoading}
-          error={error}
-        />
-      )}
+      <AnimatePresence>
+        {modalOpen && selected && (
+          <MovieModal onClose={handleCloseModal}>
+            <MovieCard
+              movie={selected}
+              details={details}
+              providers={providers}
+              isLoading={isLoading}
+              error={error}
+            />
+          </MovieModal>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {authOpen && <AuthModal onClose={handleCloseAuth} />}
+      </AnimatePresence>
     </main>
   )
 }
